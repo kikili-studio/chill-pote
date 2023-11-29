@@ -21,3 +21,8 @@
   font-size: 36px; /* Taille de police augmentée au survol */
 }
 
+body {
+  background-image: url('ressources/images/fond.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
