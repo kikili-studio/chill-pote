@@ -1,72 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>chill pote | accueil
-    </title>
-    <link rel="icon" href="ressources/images/logo.jpg">
-    <link rel="stylesheet" type="text/css" href="style.min.css">
-  </head>
-  <body>
-	      <style>
-      div {
-        position: fixed;
-        top: 0px;
-        animation-name: snow;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-      }
-      
-      @keyframes snow {
-        from {transform: translateY(-100%);}
-        to {transform: translateY(100vh);}
-      }
-    </style>
-    <script>
-      var flakes = [];
-      setInterval(function() {
-        var flake = document.createElement("div");
-        flake.innerHTML = "❄";
-        flake.style.left = Math.random() * window.innerWidth + "px";
-        flake.style.animationDuration = Math.random() * 3 + 2 + "s";
-        document.body.appendChild(flake);
-        flakes.push(flake);
-      }, 500);
-    </script>
-      <p id="datetime"></p>
-      <script>
+<head>
+  <title>Chill Pote | Accueil</title>
+  <link rel="icon" href="ressources/images/logo.jpg">
+  <link rel="stylesheet" type="text/css" href="style.min.css">
+  <style>
+    div {
+      position: fixed;
+      top: 0px;
+      animation-name: snow;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes snow {
+      from {transform: translateY(-100%);}
+      to {transform: translateY(100vh);}
+    }
+  </style>
+  <script>
+    var flakes = [];
+    setInterval(function() {
+      var flake = document.createElement("div");
+      flake.innerHTML = "❄";
+      flake.style.left = Math.random() * window.innerWidth + "px";
+      flake.style.animationDuration = Math.random() * 3 + 2 + "s";
+      document.body.appendChild(flake);
+      flakes.push(flake);
+    }, 500);
+  </script>
+  <script>
     setInterval(function() {
       var currentDateTime = new Date();
       var datetimeElement = document.getElementById("datetime");
       datetimeElement.innerHTML = currentDateTime.toLocaleString();
-    }, 1000); // Mettre à jour toutes les secondes
+    }, 1000);
   </script>
-    <header>
-      <nav>
-        <ul>
-          <a href="index.html">accueil</a>
-          <a href="info.html">info</a>
-          <a href="music.html">music</a>
-          <a href="register.html">register</a>
-          <a href="membre.html">membres</a>
-          <a href="tchat.html">tchat</a>
-          <a href="galaxio.html">galaxio</a>
-          <a href="plateformer hardcore.html">plateformer hardcore</a>
-             <a href="demande rôle chill-pote.html">recrutement</a>
-             <a href="contact.html">contact</a>
-       <a href="sponsors.html">sponsors</a>
-        </ul>
-      </nav>
-    </header>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <a href="index.html">Accueil</a>
+        <a href="info.html">Info</a>
+        <a href="music.html">Music</a>
+        <a href="register.html">Register</a>
+        <a href="membre.html">Membres</a>
+        <a href="tchat.html">Tchat</a>
+        <a href="galaxio.html">Galaxio</a>
+        <a href="plateformer hardcore.html">Plateformer Hardcore</a>
+        <a href="demande rôle chill-pote.html">Recrutement</a>
+        <a href="contact.html">Contact</a>
+        <a href="sponsors.html">Sponsors</a>
+      </ul>
+    </nav>
+  </header>
   <main>
-      <h1 class="zoom-text">Bienvenue sur chill-pote</h1>
-      <p>Venez les potes.</p>
-    <p>Bonjour. Voici un site nommé chill-pote ici on disscute vous pouvez vour enregistrer essayer de devenir administrateur ou autre il y a aussi des construction minecraft des truc minecraft des music que vous pouvez écouter il y a aussi un tchat une page d'astronomie une page ou je mais des commande html qui peuvent être utile au gens et une page d'information (allez la voir s'il vous plait)  il y a aussi 2 jeux vidéo 1 nommé firestone (frestone) et un autre nommé plateformer hardcore que <span style="color red;">kikilikiki a crée tout seul grace a gdevlop.</p>
-      <p>Petite info rapide: les admins sont en <span style="color: red;">rouge (vous verrez à plusieurs endroits).</p>
-    </main>
-    <footer>
-      <center><br>
-      <p>Copyright © 2023 Chill-pote</p>
-      </center>
-    </footer>
-  </body>
+    <h1 class="zoom-text">Bienvenue sur Chill Pote. Explorez notre univers.</h1><br>
+  </main>
+  <footer>
+    <center><br>
+    <p>Copyright © 2023 Chill Pote</p>
+    </center>
+  </footer>
+</body>
 </html>
