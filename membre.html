@@ -1,81 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>chill pote | Membre</title>
-    <link rel="icon" href="ressources/images/logo.jpg">
-    <link rel="stylesheet" type="text/css" href="style.min.css">
-  </head>
-  <body>
-	      <style>
-      div {
-        position: fixed;
-        top: 0px;
-        animation-name: snow;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-      }
-      
-      @keyframes snow {
-        from {transform: translateY(-100%);}
-        to {transform: translateY(100vh);}
-      }
-    </style>
-    <script>
-      var flakes = [];
-      setInterval(function() {
-        var flake = document.createElement("div");
-        flake.innerHTML = "❄";
-        flake.style.left = Math.random() * window.innerWidth + "px";
-        flake.style.animationDuration = Math.random() * 3 + 2 + "s";
-        document.body.appendChild(flake);
-        flakes.push(flake);
-      }, 500);
-    </script>
-      <p id="datetime"></p>
-      <script>
-    setInterval(function() {
-      var currentDateTime = new Date();
-      var datetimeElement = document.getElementById("datetime");
-      datetimeElement.innerHTML = currentDateTime.toLocaleString();
-    }, 1000); // Mettre à jour toutes les secondes
-  </script>
-    <header>
-      <nav>
-        <ul>
-          <a href="index.html">accueil</a>
-          <a href="info.html">info</a>
-          <a href="music.html">music</a>
-          <a href="register.html">register</a>
-          <a href="membre.html">membres</a>
-          <a href="tchat.html">tchat</a>
-          <a href="galaxio.html">galaxio</a>
-          <a href="plateformer hardcore.html">plateformer hardcore</a>
-             <a href="demande rôle chill-pote.html">recrutement</a>
-             <a href="contact.html">contact</a>
-       <a href="sponsors.html">sponsors</a>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1 class="zoom-text">Bienvenue à l'endroit des membres</h1>
-      <p>Si vous voulez vous inscrire ou vous désinscrire merci d'aller sur <a href="register.html">register</a></p><br>
-	    <h1 style="color:red;">créateur</h1>
-	    <p style="color: red;">chill-pote</p>
-	    <img src="ressources/images/logo.jpg">
-	    <p style="color: red;">Kikilikiki</p>
-	<img src="ressources/images/tokyo_ghoul.jpg">
-      <h1 style="color:green;">administrateur</h1>
-	<p style="color: green;">Xoulou93</p>
-	<img src="ressources/images/avatar.jpg">
-  <p style="color: green;">psbricoleur</p>
-  <img src="ressources/images/logo psbricoleur.png">
-	    <h1 style="color: yellow;">Annonceur</h1>
-	    <h1 style="color: brown;">animateur</h1>
-    </main>
-    <footer>
-      <center><br>
-      <p>Copyright © 2023 Chill-pote</p>
-      </center>
-    </footer>
-  </body>
+<head>
+  <title>Chill Pote | Membres</title>
+  <link rel="icon" href="ressources/images/logo.jpg">
+  <link rel="stylesheet" type="text/css" href="style.min.css">
+  <style>
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <a href="index.html">Accueil</a>
+        <a href="info.html">Info</a>
+        <a href="music.html">Music</a>
+        <a href="register.html">Register</a>
+        <a href="membre.html">Membres</a>
+        <a href="tchat.html">Tchat</a>
+        <a href="galaxio.html">Galaxio</a>
+        <a href="plateformer hardcore.html">Plateformer Hardcore</a>
+        <a href="demande rôle chill-pote.html">Recrutement</a>
+        <a href="contact.html">Contact</a>
+        <a href="sponsors.html">Sponsors</a>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="zoom-text">Bienvenue à l'endroit des membres</h1>
+    <p>Si vous souhaitez vous inscrire ou vous désinscrire, veuillez accéder à la page <a href="register.html">Register</a></p>
+    <h2 style="color: red;">Créateurs</h2>
+    <p style="color: red;">Chill Pote</p>
+    <img src="ressources/images/logo.jpg" alt="Logo Chill Pote">
+    <p style="color: red;">Kikilikiki</p>
+    <img src="ressources/images/tokyo_ghoul.jpg" alt="Image Kikilikiki">
+    <h2 style="color: green;">Administrateurs</h2>
+    <p style="color: green;">Xoulou93</p>
+    <img src="ressources/images/avatar.jpg" alt="Image Xoulou93">
+    <p style="color: green;">psbricoleur</p>
+    <img src="ressources/images/logo psbricoleur.png" alt="Logo psbricoleur">
+  </main>
+  <footer>
+    <center><br>
+    <p>Copyright © 2023 Chill Pote</p>
+    </center>
+  </footer>
+</body>
 </html>
