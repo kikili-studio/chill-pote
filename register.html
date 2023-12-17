@@ -1,72 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>chill pote | register</title>
-    <link rel="icon" href="ressources/images/logo.jpg">
-    <link rel="stylesheet" type="text/css" href="style.min.css">
-  </head>
-  <body>
-	      <style>
-      div {
-        position: fixed;
-        top: 0px;
-        animation-name: snow;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-      }
-      
-      @keyframes snow {
-        from {transform: translateY(-100%);}
-        to {transform: translateY(100vh);}
-      }
-    </style>
-    <script>
-      var flakes = [];
-      setInterval(function() {
-        var flake = document.createElement("div");
-        flake.innerHTML = "❄";
-        flake.style.left = Math.random() * window.innerWidth + "px";
-        flake.style.animationDuration = Math.random() * 3 + 2 + "s";
-        document.body.appendChild(flake);
-        flakes.push(flake);
-      }, 500);
-    </script>
-      <p id="datetime"></p>
-      <script>
+<head>
+  <title>Chill Pote | Register</title>
+  <link rel="icon" href="ressources/images/logo.jpg">
+  <link rel="stylesheet" type="text/css" href="style.min.css">
+  <style>
+  </style>
+</head>
+<body>
+  <style>
+    div {
+      position: fixed;
+      top: 0px;
+      animation-name: snow;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+    @keyframes snow {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(100vh); }
+    }
+  </style>
+  <script>
+    var flakes = [];
+    setInterval(function() {
+      var flake = document.createElement("div");
+      flake.innerHTML = "❄";
+      flake.style.left = Math.random() * window.innerWidth + "px";
+      flake.style.animationDuration = Math.random() * 3 + 2 + "s";
+      document.body.appendChild(flake);
+      flakes.push(flake);
+    }, 500);
+  </script>
+  <p id="datetime"></p>
+  <script>
     setInterval(function() {
       var currentDateTime = new Date();
       var datetimeElement = document.getElementById("datetime");
       datetimeElement.innerHTML = currentDateTime.toLocaleString();
-    }, 1000); // Mettre à jour toutes les secondes
+    }, 1000);
   </script>
-    <header>
-      <nav>
-        <ul>
-          <a href="index.html">accueil</a>
-          <a href="info.html">info</a>
-          <a href="music.html">music</a>
-          <a href="register.html">register</a>
-          <a href="membre.html">membres</a>
-          <a href="tchat.html">tchat</a>
-          <a href="galaxio.html">galaxio</a>
-          <a href="plateformer hardcore.html">plateformer hardcore</a>
-             <a href="demande rôle chill-pote.html">recrutement</a>
-             <a href="contact.html">contact</a>
-       <a href="sponsors.html">sponsors</a>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1 class="zoom-text">Bienvenue sur register. Remplissez ce formulaire d'inscription, si vous voulez faire partie du site.</h1>
-	      <p>Si vous souhaitez vous inscrire vous pouvez cliquer sur <a href="https://docs.google.com/forms/d/e/1FAIpQLSciDDdmwT4B47Zv3kwSbmmp2TgIV70sUAhBLwn5ewI5MeOEtw/viewform?usp=sf_link">le lien</a> juste en dessous</p>
-	      <a href="https://forms.gle/bP6RYxABUsQzeReo6">https://forms.gle/bP6RYxABUsQzeReo6</a><br><br>
-	      <p>Si vous voulez vous désinscire, merci de remplir <a href="https://forms.gle/QqJoCcovk1adRD5s9">le formulaire en dessous</a></p>
-	      <a href="https://forms.gle/QqJoCcovk1adRD5s9">https://forms.gle/QqJoCcovk1adRD5s9</a>
-      </main>
-     <footer>
-      <center><br>
-      <p>Copyright © 2023 Chill-pote</p>
-      </center>
-    </footer>
-  </body>
-</html>
+  <header>
+    <nav>
+      <ul>
+        <a href="index.html">Accueil</a>
+        <a href="info.html">Info</a>
+        <a href="music.html">Music</a>
+        <a href="register.html">Register</a>
+        <a href="membre.html">Membres</a>
+        <a href="tchat.html">Tchat</a>
+        <a href="galaxio.html">Galaxio</a>
+        <a href="plateformer hardcore.html">Plateformer Hardcore</a>
+        <a href="demande rôle chill-pote.html">Recrutement</a>
+        <a href="contact.html">Contact</a>
+        <a href="sponsors.html">Sponsors</a>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="zoom-text">Bienvenue sur Register. Remplissez le formulaire pour vous inscrire.</h1>
+    <p>Si vous souhaitez vous inscrire, vous pouvez cliquer sur <a href="https://docs.google.com/forms/d/e/1FAIpQLSciDDdmwT4B47Zv3kwSbmmp2TgIV70sUAhBLwn5ewI5MeOEtw/viewform?usp=sf_link">ce lien</a> ci-dessous.</p>
+    <a href="https://forms.gle/bP6RYxABUsQzeReo6">https://forms.gle/bP6RYxABUsQzeReo6</a>
+    <br><br>
+    <p>Si vous souhaitez vous désinscrire, merci de remplir <a href="https://forms.gle/QqJoCcovk1adRD5s9">ce formulaire</a> ci-dessous.</
