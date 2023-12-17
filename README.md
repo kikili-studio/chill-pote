@@ -23,4 +23,4 @@ Chill Pote est un projet web dynamique incluant des fonctionnalités interactive
 - **Design interactif :** Utilisation de CSS pour des animations et une mise en page modernes.
 - **JavaScript Dynamique :** Implémentation de JavaScript pour des interactions en temps réel.
 - **Formulaire d'Inscription :** Possibilité pour les utilisateurs de s'inscrire à la plateforme.
-- **Tchat en Direct :** Un espace pour échanger des messages instantanés entre utilisateurs.
+- **Tchat :** Un espace pour échanger des messages entre utilisateurs.
