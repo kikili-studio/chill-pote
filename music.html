@@ -1,89 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>chill pote | music</title>
-    <link rel="icon" href="ressources/images/logo.jpg">
-    <link rel="stylesheet" type="text/css" href="style.min.css">
-  <body>
-	      <style>
-      div {
-        position: fixed;
-        top: 0px;
-        animation-name: snow;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-      }
-      
-      @keyframes snow {
-        from {transform: translateY(-100%);}
-        to {transform: translateY(100vh);}
-      }
-    </style>
-    <script>
-      var flakes = [];
-      setInterval(function() {
-        var flake = document.createElement("div");
-        flake.innerHTML = "❄";
-        flake.style.left = Math.random() * window.innerWidth + "px";
-        flake.style.animationDuration = Math.random() * 3 + 2 + "s";
-        document.body.appendChild(flake);
-        flakes.push(flake);
-      }, 500);
-    </script>
-      <p id="datetime"></p>
-      <script>
+<head>
+  <title>Chill Pote | Music</title>
+  <link rel="icon" href="ressources/images/logo.jpg">
+  <link rel="stylesheet" type="text/css" href="style.min.css">
+</head>
+<body>
+  <style>
+    div {
+      position: fixed;
+      top: 0px;
+      animation-name: snow;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+    @keyframes snow {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(100vh); }
+    }
+  </style>
+  <script>
+    var flakes = [];
+    setInterval(function() {
+      var flake = document.createElement("div");
+      flake.innerHTML = "❄";
+      flake.style.left = Math.random() * window.innerWidth + "px";
+      flake.style.animationDuration = Math.random() * 3 + 2 + "s";
+      document.body.appendChild(flake);
+      flakes.push(flake);
+    }, 500);
+  </script>
+  <p id="datetime"></p>
+  <script>
     setInterval(function() {
       var currentDateTime = new Date();
       var datetimeElement = document.getElementById("datetime");
       datetimeElement.innerHTML = currentDateTime.toLocaleString();
-    }, 1000); // Mettre à jour toutes les secondes
+    }, 1000); 
   </script>
-    <header>
-      <nav>
-        <ul>
-          <a href="index.html">accueil</a>
-          <a href="info.html">info</a>
-          <a href="music.html">music</a>
-          <a href="register.html">register</a>
-          <a href="membre.html">membres</a>
-          <a href="tchat.html">tchat</a>
-          <a href="galaxio.html">galaxio</a>
-          <a href="plateformer hardcore.html">plateformer hardcore</a>
-             <a href="demande rôle chill-pote.html">recrutement</a>
-             <a href="contact.html">contact</a>
-       <a href="sponsors.html">sponsors</a>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1 class="zoom-text">Bienvenue sur music. Là où on met des musics. Envoyez moi vos musics</h1><br>
-      <h1>Epinglé</h1>
-      <p>Mon projet que j'ai créé avec mon groupe sur bandlab <a href="https://www.bandlab.com/band/lamusiconaime_/venez">(Voilà, si vous voulez l'écouter ou le télécharger)</a>.</p>
-      <audio controls="controls">
-        <source src="ressources/sons/music de mon groupe.mp3">
-        <source src="ressources/sons/music de mon groupe.ogg">
-      </audio>
-      <p>New_Project</p>
-      <audio controls="controls">
-        <source src="ressources/sons/New_Project.mp3">
-        <source src="ressources/sons/New_Project.ogg">
-      </audio>
-	<h1>Non épinglé</h1>
-	<p>bam_boum_cool_2</p>
-      <audio controls="controls">
-        <source src="ressources/sons/bam_boum_2.mp3">
-        <source src="ressources/sons/bam_boum_2.ogg">
-      </audio>
-	<p>bam_boum_cool</p>
-      <audio controls="controls">
-        <source src="ressources/sons/bam_boum_cool.mp3">
-        <source src="ressources/sons/bam_boum_cool.ogg">
-      </audio>
-    </main>
-    <footer>
-      <center><br>
-      <p>Copyright © 2023 Chill-pote</p>
-      </center>
-    </footer>
-  </body>
+  <header>
+    <nav>
+      <ul>
+        <a href="index.html">Accueil</a>
+        <a href="info.html">Info</a>
+        <a href="music.html">Music</a>
+        <a href="register.html">Register</a>
+        <a href="membre.html">Membres</a>
+        <a href="tchat.html">Tchat</a>
+        <a href="galaxio.html">Galaxio</a>
+        <a href="plateformer hardcore.html">Plateformer Hardcore</a>
+        <a href="demande rôle chill-pote.html">Recrutement</a>
+        <a href="contact.html">Contact</a>
+        <a href="sponsors.html">Sponsors</a>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="zoom-text">Bienvenue sur Music. Découvrez nos musiques.</h1>
+    <h2>Epinglé</h2>
+    <p>Mon projet que j'ai créé avec mon groupe sur bandlab <a href="https://www.bandlab.com/band/lamusiconaime_/venez">(Ecoutez ou téléchargez ici)</a>.</p>
+    <audio controls="controls">
+      <source src="ressources/sons/music_de_mon_groupe.mp3" type="audio/mpeg">
+      <source src="ressources/sons/music_de_mon_groupe.ogg" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
+    <h2>Non épinglé</h2>
+    <p>bam_boum_cool_2</p>
+    <audio controls="controls">
+      <source src="ressources/sons/bam_boum_2.mp3" type="audio/mpeg">
+      <source src="ressources/sons/bam_boum_2.ogg" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
+    <p>bam_boum_cool</p>
+    <audio controls="controls">
+      <source src="ressources/sons/bam_boum_cool.mp3" type="audio/mpeg">
+      <source src="ressources/sons/bam_boum_cool.ogg" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
+  </main>
+  <footer>
+    <center><br>
+    <p>Copyright © 2023 Chill Pote</p>
+    </center>
+  </footer>
+</body>
 </html>
