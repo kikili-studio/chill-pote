@@ -8,30 +8,6 @@
   </style>
 </head>
 <body>
-  <style>
-    div {
-      position: fixed;
-      top: 0px;
-      animation-name: snow;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-    }
-    @keyframes snow {
-      from { transform: translateY(-100%); }
-      to { transform: translateY(100vh); }
-    }
-  </style>
-  <script>
-    var flakes = [];
-    setInterval(function() {
-      var flake = document.createElement("div");
-      flake.innerHTML = "❄";
-      flake.style.left = Math.random() * window.innerWidth + "px";
-      flake.style.animationDuration = Math.random() * 3 + 2 + "s";
-      document.body.appendChild(flake);
-      flakes.push(flake);
-    }, 500);
-  </script>
   <p id="datetime"></p>
   <script>
     setInterval(function() {
@@ -50,7 +26,6 @@
         <a href="membre.html">Membres</a>
         <a href="tchat.html">Tchat</a>
         <a href="galaxio.html">Galaxio</a>
-        <a href="plateformer hardcore.html">Plateformer Hardcore</a>
         <a href="demande rôle chill-pote.html">Recrutement</a>
         <a href="contact.html">Contact</a>
         <a href="sponsors.html">Sponsors</a>

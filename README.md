@@ -13,7 +13,6 @@ Chill Pote est un projet web dynamique incluant des fonctionnalités interactive
 - **Membres** : Présentation des membres de l'équipe.
 - **Tchat** : Possibilité d'envoyer et de recevoir des messages en temps réel.
 - **Galaxio** : Contenu axé sur l'astronomie avec des images et des informations sur les planètes.
-- **Plateformer Hardcore** : Présentation d'un jeu vidéo exclusif à Chill Pote.
 - **Recrutement** : Possibilité de postuler pour des rôles administratifs ou d'animation.
 - **Contact** : Page dédiée aux moyens de contacter l'équipe du site.
 - **Sponsors** : Section remerciant et listant les sponsors ayant contribué au projet.

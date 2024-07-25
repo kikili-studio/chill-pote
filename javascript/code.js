@@ -26,3 +26,26 @@ setInterval(function() {
 function getRandomColor() {
   return '#' + Math.floor(Math.random() * 16777215).toString(16);
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Ajoutez ici les scripts nécessaires
+  // Par exemple, vous pouvez ajouter un effet de défilement lisse pour la navigation
+  const links = document.querySelectorAll('nav ul li a');
+
+  for (const link of links) {
+      link.addEventListener('click', smoothScroll);
+  }
+
+  function smoothScroll(event) {
+      event.preventDefault();
+      const targetId = event.currentTarget.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+          window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: 'smooth'
+          });
+      }
+  }
+});
