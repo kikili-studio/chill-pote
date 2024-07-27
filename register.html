@@ -45,46 +45,9 @@
   </header>
 
   <main class="container mt-5 form-container">
-    <h1 class="zoom-text">Inscription</h1>
-    <p class="mt-4">Veuillez remplir le formulaire pour vous inscrire. Le pseudo et l'image de profil seront visibles par tout le monde.</p>
-    <form action="envoyer_inscription.php" method="post" enctype="multipart/form-data">
-      <div class="form-group">
-        <label for="role">Quel rôle souhaitez-vous ?</label>
-        <select id="role" name="role" class="form-control" required>
-          <option value="">Choisir un rôle</option>
-          <option value="administrateur">Administrateur</option>
-          <option value="rédacteur">Rédacteur</option>
-          <option value="animateur">Animateur</option>
-          <option value="recruteur">Recruteur</option>
-          <option value="modérateur">Modérateur</option>
-          <option value="autre">Autre</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="notifications">Voulez-vous recevoir des notifications des nouveautés ?</label>
-        <select id="notifications" name="notifications" class="form-control" required>
-          <option value="oui">Oui</option>
-          <option value="non">Non</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="email">Adresse e-mail ou numéro de téléphone :</label>
-        <input type="text" id="email" name="email" class="form-control" required>
-      </div>
-      <div class="form-group">
-        <label for="pseudo">Pseudo :</label>
-        <input type="text" id="pseudo" name="pseudo" class="form-control" required>
-      </div>
-      <div class="form-group">
-        <label for="profile_image">Image de profil :</label>
-        <input type="file" id="profile_image" name="profile_image" class="form-control-file">
-      </div>
+    <h1
       <div id="vaultaid-button" data-vcustom-css-class="SI BESOIN DE CHANGER LES COULEURS MET CETTE CLASSE" data-vclient-id="paI9DU58-bH-s_kwuLAt-yUDOQ93F6xw6Ukfwd2BN4w2EdYWKcIxdyCdLrqk2j4v" data-vscope="email,name,firstname,username,phone,organization,newsletter,verified,date_created,avatar" data-vreturn-uri="YOUR_CALLBACK_URL"></div>
       <button type="submit" class="btn btn-primary">S'inscrire</button>
-    </form>
-    <p class="mt-4">N'envoyez jamais de mots de passe via Google Forms.</p>
-  </main>
-
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
