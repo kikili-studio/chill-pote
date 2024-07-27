@@ -1,51 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>Chill Pote | Info</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chill Pote | Accueil</title>
   <link rel="icon" href="ressources/images/logo.jpg">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.min.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <a href="index.html">Accueil</a>
-        <a href="info.html">Info</a>
-        <a href="music.html">Music</a>
-        <a href="register.html">Register</a>
-        <a href="membre.html">Membres</a>
-        <a href="tchat.html">Tchat</a>
-        <a href="galaxio.html">Galaxio</a>
-        <a href="demande rôle chill-pote.html">Recrutement</a>
-        <a href="contact.html">Contact</a>
-        <a href="sponsors.html">Sponsors</a>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h1 class="zoom-text">Infos du site</h1>
-    <section id="info">
-      <article class="post">
-        <h2><span style="color: rgb(255, 0, 0);">index</span></h2>
-        <p class="date"><span style="color: hwb(145 0% 0%);">Publié le 26 Juillet 2024</span></p>
-        <p>Modification de la page d'acceuil <a href="https://kikili-studio.github.io/chill-pote/index.html">(index)</a>.<br>Modification de la page <a href="https://kikili-studio.github.io/chill-pote/membre.html">membre</a> (+1 codeur)</p>
-    </article>
-      <article class="post">
-        <h2><span style="color: rgb(255, 0, 0);">Music</span></h2>
-        <p class="date"><span style="color: hwb(145 0% 0%);">Publié le 26 Juillet 2024</span></p>
-        <p>Les music et la disposition du texte a été modifié.<br>Le texte tout en bas de chaque page a été suprimé.<br>La page galaxio a été supprimé<br>Une nouvel music a été ajouté.</p>
-    </article>
-      <article class="post">
-        <h2><span style="color: rgb(255, 0, 0);">Reprise</span></h2>
-        <p class="date"><span style="color: hwb(145 0% 0%);">Publié le 25 Juillet 2024</span></p>
-        <p>Reprise du site web que l'ont avait mis en pause pour des raispon personnel.<br>nouveaux theme pour les info.<br>j'ai retiré tout les effet de neige.<br>j'ai mpodifié la couleur du texte.</p>
-    </article>
-      <article class="post">
-          <h2><span style="color: rgb(255, 0, 0);">Nouvel information</span></h2>
-          <p class="date"><span style="color: hwb(145 0% 0%);">Publié le 25 Juillet 2024</span></p>
-          <p>Voici le nouveaux system pour les informationdu site web</p>
-      </article>
-  </section>
+  <?php include 'header.php'; ?>
+
+  <main class="container mt-5">
+    <div class="text-center">
+      <h1 class="display-4">Bienvenue sur Chill Potes</h1>
+      <p class="lead">Bonjour, voici mon site web nommé Chill Pote codé par FeelsMan, Xoulou93, Varox et psbricoleur.</p>
+      <p>Si vous voulez plus de renseignements, n'hésitez pas à envoyer un message dans <a href="tchat.html">le tchat</a>.</p>
+    </div>
+    <div id="datetime" class="text-center mt-4"></div>
   </main>
+
+  <script>
+    setInterval(function() {
+      var currentDateTime = new Date();
+      var datetimeElement = document.getElementById("datetime");
+      datetimeElement.innerHTML = currentDateTime.toLocaleString();
+    }, 1000);
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
