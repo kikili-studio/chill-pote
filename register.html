@@ -1,40 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>Chill Pote | Register</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chill Pote | Inscription</title>
   <link rel="icon" href="ressources/images/logo.jpg">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.min.css">
   <style>
+    .zoom-text {
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .form-container {
+      max-width: 600px;
+      margin: auto;
+    }
   </style>
 </head>
 <body>
-  <p id="datetime"></p>
-  <script>
-    setInterval(function() {
-      var currentDateTime = new Date();
-      var datetimeElement = document.getElementById("datetime");
-      datetimeElement.innerHTML = currentDateTime.toLocaleString();
-    }, 1000);
-  </script>
   <header>
-    <nav>
-      <ul>
-        <a href="index.html">Accueil</a>
-        <a href="info.html">Info</a>
-        <a href="music.html">Music</a>
-        <a href="register.html">Register</a>
-        <a href="membre.html">Membres</a>
-        <a href="tchat.html">Tchat</a>
-        <a href="galaxio.html">Galaxio</a>
-        <a href="demande rôle chill-pote.html">Recrutement</a>
-        <a href="contact.html">Contact</a>
-        <a href="sponsors.html">Sponsors</a>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Chill Pote</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="info.html">Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="membre.html">Membres</a></li>
+          <li class="nav-item"><a class="nav-link" href="tchat.html">Tchat</a></li>
+          <li class="nav-item"><a class="nav-link" href="galaxio.html">Galaxio</a></li>
+          <li class="nav-item"><a class="nav-link" href="demande_role_chill_pote.html">Recrutement</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
-  <main>
-    <h1 class="zoom-text">Bienvenue sur Register. Remplissez le formulaire pour vous inscrire.</h1>
-    <p>Si vous souhaitez vous inscrire, vous pouvez cliquer sur <a href="https://docs.google.com/forms/d/e/1FAIpQLSciDDdmwT4B47Zv3kwSbmmp2TgIV70sUAhBLwn5ewI5MeOEtw/viewform?usp=sf_link">ce lien</a> ci-dessous.</p>
-    <a href="https://forms.gle/bP6RYxABUsQzeReo6">https://forms.gle/bP6RYxABUsQzeReo6</a>
-    <br><br>
-    <p>Si vous souhaitez vous désinscrire, merci de remplir <a href="https://forms.gle/QqJoCcovk1adRD5s9">ce formulaire</a> ci-dessous.</
+
+  <main class="container mt-5 form-container">
+    <h1 class="zoom-text">Inscription</h1>
+    <p class="mt-4">Veuillez remplir le formulaire pour vous inscrire. Le pseudo et l'image de profil seront visibles par tout le monde.</p>
+    <form action="envoyer_inscription.php" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="role">Quel rôle souhaitez-vous ?</label>
+        <select id="role" name="role" class="form-control" required>
+          <option value="">Choisir un rôle</option>
+          <option value="administrateur">Administrateur</option>
+          <option value="rédacteur">Rédacteur</option>
+          <option value="animateur">Animateur</option>
+          <option value="recruteur">Recruteur</option>
+          <option value="modérateur">Modérateur</option>
+          <option value="autre">Autre</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="notifications">Voulez-vous recevoir des notifications des nouveautés ?</label>
+        <select id="notifications" name="notifications" class="form-control" required>
+          <option value="oui">Oui</option>
+          <option value="non">Non</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="email">Adresse e-mail ou numéro de téléphone :</label>
+        <input type="text" id="email" name="email" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="pseudo">Pseudo :</label>
+        <input type="text" id="pseudo" name="pseudo" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="profile_image">Image de profil :</label>
+        <input type="file" id="profile_image" name="profile_image" class="form-control-file">
+      </div>
+      <button type="submit" class="btn btn-primary">S'inscrire</button>
+    </form>
+    <p class="mt-4">N'envoyez jamais de mots de passe via Google Forms.</p>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
