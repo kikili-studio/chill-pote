@@ -1,62 +1,77 @@
-
-
-
-
-
-
-/* Définition des styles par défaut pour la balise <h1> */
-.zoom-text {
-  font-size: 24px; /* Taille de police de départ */
-  transition: font-size 0.3s ease-in-out; /* Animation de transition pour une animation fluide */
-  cursor: pointer; /* Affichage du curseur en tant que pointeur */
+/* Utilisation de couleurs modernes */
+:root {
+  --primary-color: #007bff; /* Couleur principale */
+  --secondary-color: #6c757d; /* Couleur secondaire */
+  --background-color: #f8f9fa; /* Couleur de fond */
+  --text-color: #212529; /* Couleur du texte */
+  --card-bg: #ffffff; /* Couleur d'arrière-plan des cartes */
+  --footer-bg: #343a40; /* Couleur de fond du pied de page */
+  --footer-text-color: #ffffff; /* Couleur du texte du pied de page */
 }
 
-/* Définition des styles pour la survol (hover) */
-.zoom-text:hover {
-  font-size: 36px; /* Taille de police augmentée au survol */
-}
-
-
+/* Style global */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
+/* En-tête */
 header {
-  background: #333;
-  color: #fff;
+  background: var(--footer-bg);
+  color: var(--footer-text-color);
   padding: 1em 0;
   text-align: center;
 }
 
-header h1 {
-  margin: 0;
+/* Navigation */
+nav {
+  background: var(--footer-bg);
 }
 
 nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 nav ul li {
   display: inline;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 nav ul li a {
-  color: #fff;
+  color: var(--footer-text-color);
   text-decoration: none;
+  font-weight: bold;
 }
 
+nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+/* Style du titre avec effet de zoom */
+.zoom-text {
+  font-size: 24px;
+  transition: font-size 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.zoom-text:hover {
+  font-size: 36px;
+}
+
+/* Contenu principal */
 main {
   padding: 20px;
 }
 
+/* Cartes et articles */
 article.post {
-  background: #fff;
+  background: var(--card-bg);
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -66,27 +81,31 @@ article.post h2 {
   margin-top: 0;
 }
 
+/* Date */
 .date {
   color: #999;
 }
 
+/* Sections spécifiques */
 section#about, section#contact {
-  background: #fff;
+  background: var(--card-bg);
   padding: 20px;
   margin-top: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Pied de page */
 footer {
-  background: #333;
-  color: #fff;
+  background: var(--footer-bg);
+  color: var(--footer-text-color);
   text-align: center;
   padding: 10px 0;
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 0;
 }
 
+/* Formulaires */
 form label {
   display: block;
   margin-bottom: 5px;
@@ -94,19 +113,33 @@ form label {
 
 form input, form textarea {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 form button {
-  background: #333;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--card-bg);
   border: none;
   padding: 10px 20px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
 form button:hover {
-  background: #555;
+  background: #0056b3;
+}
+
+/* Images des membres */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img.avatar {
+  width: 150px; /* Taille spécifique pour les images des membres */
+  height: 150px;
+  border-radius: 50%;
 }
