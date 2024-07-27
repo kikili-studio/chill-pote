@@ -250,3 +250,19 @@ form button {
 form button:hover {
   background: #555;
 }
+
+/* CSS pour uniformiser la taille des images */
+.member-img {
+  width: 150px; /* Largeur fixe pour toutes les images */
+  height: 150px; /* Hauteur fixe pour toutes les images */
+  object-fit: cover; /* Maintient l'aspect ratio tout en remplissant les dimensions spécifiées */
+  border-radius: 50%; /* Bordure arrondie pour une apparence de cercle */
+  margin-bottom: 15px; /* Espacement en bas des images */
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
