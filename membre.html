@@ -1,42 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chill Pote | Membres</title>
   <link rel="icon" href="ressources/images/logo.jpg">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.min.css">
-  <style>
-  </style>
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <a href="index.html">Accueil</a>
-        <a href="info.html">Info</a>
-        <a href="music.html">Music</a>
-        <a href="register.html">Register</a>
-        <a href="membre.html">Membres</a>
-        <a href="tchat.html">Tchat</a>
-        <a href="galaxio.html">Galaxio</a>
-        <a href="demande rôle chill-pote.html">Recrutement</a>
-        <a href="contact.html">Contact</a>
-        <a href="sponsors.html">Sponsors</a>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Chill Pote</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="info.html">Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="membre.html">Membres</a></li>
+          <li class="nav-item"><a class="nav-link" href="tchat.html">Tchat</a></li>
+          <li class="nav-item"><a class="nav-link" href="galaxio.html">Galaxio</a></li>
+          <li class="nav-item"><a class="nav-link" href="demande_role_chill_pote.html">Recrutement</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
-  <main>
-    <h1 class="zoom-text">Bienvenue à l'endroit des membres</h1>
-    <p>Si vous souhaitez vous inscrire ou vous désinscrire, veuillez accéder à la page <a href="register.html">Register</a></p>
-    <p>FeelsMan | kikilikiki<br>badge : <span style="color: rgb(255, 0, 0);">Créateurs</span></p>
-    <img src="ressources/images/logofeelsMan.jpg" alt="Image Kikilikiki">
-    <p>Chill Pote<br>badge : <span style="color: rgb(255, 0, 0);">Créateurs</span></p>
-    <img src="ressources/images/logo.jpg" alt="Logo Chill Pote">
-    <p>psbricoleur<br>badge : <span style="color: rgb(0, 26, 255);">administrateur</span></p>
-    <img src="ressources/images/logopsbricoleur.png" alt="Logo psbricoleur">
-    <p>Xoulou93<br>badge : <span style="color: rgb(0, 26, 255);">administrateur</span></p>
-    <img src="ressources/images/avatar.jpg" alt="Image Xoulou93">
-    <p>Varox<br>badge : <span style="color: rgb(255, 0, 191);">codeur</span></p>
-    <img src="ressources/images/avatar.jpg" alt="Logo varox">
+
+  <main class="container mt-5">
+    <h1 class="text-center">Bienvenue à l'espace des membres</h1>
+    <p class="text-center">Si vous souhaitez vous inscrire ou vous désinscrire, veuillez accéder à la page <a href="register.html">Register</a>.</p>
+    
+    <div class="row">
+      <div class="col-md-6 text-center mb-4">
+        <p>FeelsMan | kikilikiki<br>badge : <span class="text-danger">Créateurs</span></p>
+        <img src="ressources/images/logofeelsMan.jpg" alt="Image Kikilikiki" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6 text-center mb-4">
+        <p>Chill Pote<br>badge : <span class="text-danger">Créateurs</span></p>
+        <img src="ressources/images/logo.jpg" alt="Logo Chill Pote" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6 text-center mb-4">
+        <p>psbricoleur<br>badge : <span class="text-primary">Administrateur</span></p>
+        <img src="ressources/images/logopsbricoleur.png" alt="Logo psbricoleur" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6 text-center mb-4">
+        <p>Xoulou93<br>badge : <span class="text-primary">Administrateur</span></p>
+        <img src="ressources/images/avatar.jpg" alt="Image Xoulou93" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6 text-center mb-4">
+        <p>Varox<br>badge : <span class="text-pink">Codeur</span></p>
+        <img src="ressources/images/avatar.jpg" alt="Logo varox" class="img-fluid rounded">
+      </div>
+    </div>
   </main>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
