@@ -143,3 +143,110 @@ img.avatar {
   height: 150px;
   border-radius: 50%;
 }
+
+/* Définition des styles par défaut pour la balise <h1> */
+.zoom-text {
+  font-size: 24px; /* Taille de police de départ */
+  transition: font-size 0.3s ease-in-out; /* Animation de transition pour une animation fluide */
+  cursor: pointer; /* Affichage du curseur en tant que pointeur */
+}
+
+/* Définition des styles pour la survol (hover) */
+.zoom-text:hover {
+  font-size: 36px; /* Taille de police augmentée au survol */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333; /* Texte par défaut en gris foncé pour meilleure lisibilité */
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+article.post {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article.post h2 {
+  margin-top: 0;
+  color: #333; /* Titre des articles en gris foncé pour plus de contraste */
+}
+
+.date {
+  color: #666; /* Texte de la date en gris clair pour moins de contraste */
+}
+
+section#about, section#contact {
+  background: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #555;
+}
